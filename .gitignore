@@ -1,0 +1,12 @@
+node_modules/
+.env
+
+# 생성된 에셋 (output/.gitkeep은 유지)
+output/*
+!output/.gitkeep
+
+# macOS
+.DS_Store
+
+# 로그
+*.log
