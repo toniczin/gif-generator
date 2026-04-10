@@ -7,14 +7,16 @@ const parentModules = path.resolve(__dirname, "../node_modules");
 export default defineConfig({
   plugins: [react()],
   resolve: {
-    alias: {
-      "@composition": path.resolve(__dirname, "../src"),
-      "remotion": path.resolve(parentModules, "remotion"),
-      "@remotion/player": path.resolve(parentModules, "@remotion/player"),
-      "@remotion/zod-types": path.resolve(parentModules, "@remotion/zod-types"),
-      "react": path.resolve(parentModules, "react"),
-      "react-dom": path.resolve(parentModules, "react-dom"),
-    },
+    alias: [
+      { find: "@composition", replacement: path.resolve(__dirname, "../src") },
+      { find: /^remotion$/, replacement: path.resolve(parentModules, "remotion") },
+      { find: /^remotion\/(.*)$/, replacement: path.resolve(parentModules, "remotion") + "/$1" },
+      { find: /^@remotion\/player$/, replacement: path.resolve(parentModules, "@remotion/player") },
+      { find: /^@remotion\/player\/(.*)$/, replacement: path.resolve(parentModules, "@remotion/player") + "/$1" },
+      { find: /^@remotion\/zod-types$/, replacement: path.resolve(parentModules, "@remotion/zod-types") },
+      { find: /^@remotion\/zod-types\/(.*)$/, replacement: path.resolve(parentModules, "@remotion/zod-types") + "/$1" },
+    ],
+    dedupe: ["react", "react-dom", "remotion", "@remotion/player"],
   },
   publicDir: path.resolve(__dirname, "../public"),
   server: {
