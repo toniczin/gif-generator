@@ -1,7 +1,12 @@
 node_modules/
 .env
+dist/
+editor/dist/
 
-# 생성된 에셋 (output/.gitkeep은 유지)
+# Claude Code local settings
+.claude/
+
+# 생성된 에셋
 output/*
 !output/.gitkeep
 

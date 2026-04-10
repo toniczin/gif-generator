@@ -1,0 +1,18 @@
+export const theme = {
+  bg: "#f5f5f7",
+  panel: "#ffffff",
+  canvas: "#e8e8ed",
+  border: "#e0e0e0",
+  borderSubtle: "#eeeeee",
+  text: "#1a1a1a",
+  textSecondary: "#666666",
+  textTertiary: "#999999",
+  selected: "#e8e6ff",
+  selectedBorder: "#6c63ff",
+  inputBg: "#fafafa",
+  inputBorder: "#d4d4dc",
+  buttonBg: "#f0f0f5",
+  buttonHover: "#e8e8ed",
+  accent: "#6c63ff",
+  danger: "#ff4444",
+} as const;

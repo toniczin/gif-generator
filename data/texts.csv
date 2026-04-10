@@ -1,6 +1,6 @@
-slug,title,subtitle,price
-gangnam-sale-50off,"강남역","최대 50% 할인","강남"
-gangbuk-limited-edition,"강북역","한정 수량 판매","강북"
-gangseo-free-shipping,"강서역","3만원 이상 구매 시","강서"
-gangdong-summer-open,"강동역","시원한 여름 아이템","강동"
-seongsu-member-benefit,"성수역","가입 즉시 쿠폰 지급","성수"
+slug,location,title,subtitle,bg-color,bg-gradient,title-color,title-stroke-color,title-shadow-color,title-glow-color,location-color,location-stroke-color,subtitle-color,obj1,obj2,obj3,obj4
+gangnam-healing,"강남 선릉역","힐링뷰\\n테라피","전원 한국인 관리사",#0d0a1a,"linear-gradient(160deg,#1a1040 0%,#0d0a1a 40%,#060412 100%)",#c8a0e8,#4a2070,#1a0a30,"rgba(160,120,255,0.4)",#c8b0e8,#4a2070,#b8a8d0,Object.png,Object1.png,Object.png,Object1.png
+gangbuk-premium,"강북역","프리미엄\\n케어","신규 오픈 이벤트",#0a0d1a,"linear-gradient(160deg,#0a1a40 0%,#0a0d1a 40%,#040612 100%)",#a0c8e8,#1a4070,#0a1a30,"rgba(100,160,255,0.4)",#b0c8e8,#1a4070,#a8b8d0,Object.png,Object1.png,,
+gangseo-beauty,"강서역","뷰티\\n스파","최대 50% 할인",#1a0a15,"linear-gradient(160deg,#401a30 0%,#1a0a15 40%,#120410 100%)",#e8a0c0,#702050,#1a0a18,"rgba(255,120,180,0.4)",#e8b0c8,#702050,#d0a8b8,Object.png,,Object1.png,
+gangdong-relax,"강동역","릴렉스\\n테라피","오전 예약 가능",#0a1a15,"linear-gradient(160deg,#0a4030 0%,#0a1a15 40%,#041210 100%)",#a0e8c8,#1a7050,#0a1a18,"rgba(100,255,180,0.4)",#b0e8c8,#1a7050,#a8d0b8,Object.png,Object1.png,,Object.png
+seongsu-hot,"성수역","핫플\\n마사지","전원 한국인 관리사",#0d0a1a,"linear-gradient(160deg,#1a1040 0%,#0d0a1a 40%,#060412 100%)",#c8a0e8,#4a2070,#1a0a30,"rgba(160,120,255,0.4)",#c8b0e8,#4a2070,#b8a8d0,Object.png,Object1.png,Object.png,Object1.png

@@ -1,17 +1,33 @@
 {
   "name": "gif-generator",
-  "version": "1.0.0",
-  "description": "Creatomate 기반 GIF 템플릿 대량 생산 자동화",
-  "main": "src/generate.js",
+  "version": "3.0.0",
+  "description": "Remotion 기반 프로모션 카드 에셋 대량 생산 자동화",
+  "type": "module",
   "scripts": {
-    "generate": "node src/generate.js"
+    "assets": "node scripts/generate-assets.js",
+    "dev": "npm run assets && npx remotion studio",
+    "render": "npm run assets && node src/render.js",
+    "render:gif": "npm run assets && node src/render.js --format=gif",
+    "render:still": "npm run assets && node src/render.js --format=still",
+    "editor": "npm run assets && cd editor && npm run dev",
+    "editor:install": "cd editor && npm install"
   },
-  "keywords": ["creatomate", "gif", "template", "automation"],
+  "keywords": ["remotion", "gif", "webm", "template", "automation", "card"],
   "license": "UNLICENSED",
   "private": true,
   "dependencies": {
-    "creatomate": "^1.0.0",
+    "@remotion/bundler": "^4.0.0",
+    "@remotion/cli": "^4.0.0",
+    "@remotion/renderer": "^4.0.0",
+    "@remotion/zod-types": "^4.0.0",
     "csv-parse": "^5.0.0",
-    "dotenv": "^16.0.0"
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "remotion": "^4.0.0",
+    "zod": "^3.22.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.0",
+    "typescript": "^5.0.0"
   }
 }
